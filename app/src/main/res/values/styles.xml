@@ -1,0 +1,22 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/sephoraColorPrimary</item>
+        <item name="colorPrimaryDark">@color/sephoraColorPrimaryDark</item>
+        <item name="colorAccent">@color/sephoraColorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/sephoraColorPrimary</item>
+        <item name="colorPrimaryDark">@color/sephoraColorPrimaryDark</item>
+        <item name="colorAccent">@color/sephoraColorAccent</item>
+    </style>
+
+
+    <!-- Button Style -->
+    <style name="SephoraRippleStyle">
+        <item name="colorButtonNormal">@color/sephoraColorPrimary</item>
+        <item name="colorControlHighlight">@color/sephoraColorAccent</item>
+    </style>
+</resources>
