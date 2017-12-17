@@ -1,25 +1,19 @@
 package my.com.toru.pickdagger.app
 
-import android.app.Activity
 import android.app.Application
-import dagger.android.AndroidInjector
-import dagger.android.DispatchingAndroidInjector
-import dagger.android.HasActivityInjector
-import javax.inject.Inject
+import my.com.toru.pickdagger.di.AppComponent
 
 /**
  * Created by toruchoi on 16/12/2017.
  */
-class PickDaggerApplication:Application(), HasActivityInjector {
+class PickDaggerApplication:Application(){
 
-    @Inject lateinit var dispatchingAndroidInjector:DispatchingAndroidInjector<Activity>
-
-    override fun activityInjector(): AndroidInjector<Activity> {
-        return dispatchingAndroidInjector
-    }
+    lateinit var component: AppComponent
 
     override fun onCreate() {
         super.onCreate()
-        DaggerApplicationComponent.create().inject(this@PickDaggerApplication)
+    }
+
+    private fun createComponent(){
     }
 }
