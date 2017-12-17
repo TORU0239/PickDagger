@@ -20,6 +20,5 @@ class PickDaggerApplication:Application(), HasActivityInjector {
 
     override fun onCreate() {
         super.onCreate()
-        DaggerApplicationComponent.create().inject(this@PickDaggerApplication)
     }
 }
